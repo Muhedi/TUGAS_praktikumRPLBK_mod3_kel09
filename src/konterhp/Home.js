@@ -5,8 +5,14 @@ import Kuota from "./Kuota";
 
 class Home extends Component {
     state = {
-        komponen1: false,
-        komponen2: false
+        komponen1: true,
+        komponen2: true,
+    }
+      componentDidUpdate(prevProps, prevState, snapshot) {
+        alert(`Pokoke jangan lupa bayar!`)
+    }
+    shouldComponentUpdate(nextProps, nextState, nextContext) {
+        return window.confirm('SELAMAT DATANG :)');
     }
     ubahkomponen1 = () => {
         this.setState((state) => {

@@ -16,7 +16,7 @@ class Kuota extends Component {
         })
     }
   componentWillUnmount(){
-        alert('Hide Kuota gan (Unmount)!')
+        alert('Hide Kuota gan (Proses Unmount)!')
     }
     render() {
         return (
