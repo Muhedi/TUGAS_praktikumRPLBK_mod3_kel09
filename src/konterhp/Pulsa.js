@@ -13,7 +13,7 @@ class Pulsa extends Component {
         this.setState((state) => { return { isi: state.isi - 5000 } })
     }
     componentWillUnmount(){
-        alert('Hide Kuota gan (Unmount)!')
+        alert('Hide Pulsa gan (Unmount)!')
     }
     render() {
         return (
